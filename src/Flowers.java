@@ -1,12 +1,11 @@
 public class Flowers {
     String flowerName;
-    String freshnessStatus;
+    int freshness;
     int price;
 
-    public Flowers(String flowerName, String freshness, int price) {
+    public Flowers(String flowerName, int freshness, int price) {
         this.flowerName = flowerName;
         this.price = price;
-        this.freshnessStatus = freshnessStatus;
 
     }
 
@@ -14,7 +13,7 @@ public class Flowers {
     public String toString() {
         return "Flowers{" +
                 "flowerName='" + flowerName + '\'' +
-                ", freshnessStatus='" + freshnessStatus + '\'' +
+                ", freshnessStatus='" + freshness + '\'' +
                 ", price=" + price +
                 '}';
     }

@@ -53,59 +53,68 @@ public class Main {
 //    return person;
         //Flowers
 
-//        Flowers flowers1 = new Flowers("Роза", "Цветы свежие! ", 3990);
-//        Flowers flowers2 = new Flowers("Ромашка", "Цветы не свежие ", 2990);
-//        Flowers flowers3 = new Flowers("Пионы", "Цветы свежие! ", 1590);
-//        Flowers flowers4 = new Flowers("Лилии", "Цветы не свежие ", 1490);
-//
-//        Flowers[] array = new Flowers[]{flowers1, flowers2, flowers3, flowers4};
-//
-//        System.out.println(minPriceFlower(array));
-//        checkFreshness(array);
-//
-//    }
-//
-//    public static Flowers minPriceFlower(Flowers[] flowers) {
-//        System.out.println("минимальный price ");
-//        Flowers flower = flowers[0];
-//        for (int i = 0; i < flowers.length; i++) {
-//            if (flowers[i].price < flower.price) {
-//                flower = flowers[i];
-//
+        Flowers flowers1 = new Flowers("Роза   ", 10, 3990);
+        Flowers flowers2 = new Flowers("Ромашка", 7, 2990);
+        Flowers flowers3 = new Flowers("Пионы  ", 6, 1590);
+        Flowers flowers4 = new Flowers("Лилии  ", 4, 1490);
+
+        Flowers[] array = new Flowers[]{flowers1, flowers2, flowers3, flowers4};
+        int [] st = {flowers1.freshness, flowers2.freshness, flowers3.freshness, flowers4.freshness};
+        System.out.println(Arrays.toString(st));
+
+        Arrays.sort(st);
+
+        System.out.println(minPriceFlower(array));
+        checkFreshness(array);
+
+    }
+
+    public static Flowers minPriceFlower(Flowers[] flowers) {
+        System.out.println("минимальный price ");
+        Flowers flower = flowers[0];
+        for (int i = 0; i < flowers.length; i++) {
+            if (flowers[i].price < flower.price) {
+                flower = flowers[i];
+
+            }
+        }
+        return flower;
+
+
+    }
+
+    //    public static Flowers freshness(Flowers[] flowers1) {
+//        System.out.println("Свежесть цветов : ");
+//        Flowers flowers = flowers1[0];
+//        for (int i = 0; i < flowers1) {
+//            if (flowers1[i].freshness < flowers.freshness) {
+//                flowers = flowers1[i];
 //            }
 //        }
-//        return flower;
-//
-//
+//        return flowers;
 //    }
-//
-//    //    public static Flowers freshness(Flowers[] flowers1) {
-////        System.out.println("Свежесть цветов : ");
-////        Flowers flowers = flowers1[0];
-////        for (int i = 0; i < flowers1) {
-////            if (flowers1[i].freshness < flowers.freshness) {
-////                flowers = flowers1[i];
-////            }
-////        }
-////        return flowers;
-////    }
-//    private static boolean isFreshFlower(String status) {
-//        return status.equalsIgnoreCase("fresh");
-//    }
-//
-//    public static void checkFreshness(Flowers[] flowers) {
-//        System.out.println("Свежесть цветов:");
+    private static boolean isFreshFlower(String status) {
+        return status.equalsIgnoreCase("fresh");
+    }
+
+    public static void checkFreshness(Flowers[] flowers) {
+        System.out.println("Свежесть цветов:");
+
+        for (int i = 0; i < flowers.length-1 ; i++) {
+
+        }
+
+
+//    public static void isFreshFlower1(Flowers[] flowers) {
+//     System.out.println("Свежесть цветов:");
 //        for (Flowers flower : flowers) {
-//            System.out.println(flower.flowerName + " - " + flower.freshnessStatus);
-//        }
+//        System.out.println(Flowers.flowersName + " - " + flower.freshnessStatus);
 //    }
-//}
-//
-////    public static void isFreshFlower1(Flowers[] flowers) {
-////     System.out.println("Свежесть цветов:");
-////        for (Flowers flower : flowers) {
-////        System.out.println(Flowers.flowersName + " - " + flower.freshnessStatus);
-////    }
+ // Seasons
+    String [] seasons05 ={"Spring","Summer","Autumn","Winter "};
+//Seasons seasons = new Seasons(seasons05);
+//Seasons.Seasons04(seasons05);
+
 
 
     }
