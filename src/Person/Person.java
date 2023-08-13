@@ -1,3 +1,5 @@
+package Person;
+
 public class Person {
     String fullName ;
     int age;
@@ -11,7 +13,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Person.Person{" +
                 "fullName='" + fullName + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +

@@ -1,3 +1,5 @@
+package Seasons;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -8,7 +10,7 @@ String [] seasons ={"Spring","Summer","Autumn","Winter "};
         this.seasons = seasons;
     }
 
-    public static void Seasons04(String [] seasons){
+    public static void Seasons04(String[] seasons){
         Scanner sc = new Scanner(System.in);
         System.out.println("Напишите номер месяца: ");
 
